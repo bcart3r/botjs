@@ -1,11 +1,10 @@
 Bot = require('nodeBot').Bot
-getTime = require('./plugins/time').getTime
 
 bot = new Bot
   nick: 'Irg'
   user: 'Irg'
   channels: ['#irgtalk']
-  plugins: [getTime]
+  plugins: []
 
 bot.connect 'irc.freenode.org', 6667
 
