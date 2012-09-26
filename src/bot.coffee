@@ -22,6 +22,8 @@ class Bot extends irc.Irc
     switch match
       when 'join'
         @plugins.push {matcher: "JOIN", callback: callback}
+      when 'leave'
+        @plugins.push {matcher: "PART|QUIT", callback: callback}
       else
         @plugins.push {matcher: match, callback: callback}
 
