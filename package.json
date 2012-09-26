@@ -22,7 +22,7 @@
       "url": "git://github.com/bcart3r/NodeBot.git"
     }
   ],
-  "main": "./src/bot.js",
+  "main": "./lib/bot.js",
   "readme": "# Simple Irc Bots in nodejs.",
   "_id": "nodeBot@0.0.1"
 }

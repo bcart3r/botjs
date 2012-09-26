@@ -1,7 +1,7 @@
-irg = require './bot'
+Bot = require('nodeBot').Bot
 getTime = require('./plugins/time').getTime
 
-bot = new irg.Bot
+bot = new Bot
   nick: 'Irg'
   user: 'Irg'
   channels: ['#irgtalk']
