@@ -1,6 +1,6 @@
 {
   "name": "botjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "irc",
     "bot",
@@ -24,5 +24,5 @@
   ],
   "main": "./lib/bot.js",
   "readme": "# Simple Irc Bots in nodejs.",
-  "_id": "botjs@0.0.1"
+  "_id": "botjs@0.0.2"
 }
