@@ -1,0 +1,28 @@
+{
+  "name": "nodeBot",
+  "version": "0.0.1",
+  "keywords": [
+    "irc",
+    "bot",
+    "networking"
+  ],
+  "author": {
+    "name": "bcart3r",
+    "email": "bcart3r@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "homepage": "https://github.com/bcart3r/NodeBot",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/bcart3r/NodeBot.git"
+    }
+  ],
+  "main": "./src/bot.js",
+  "readme": "# Simple Irc Bots in nodejs.",
+  "_id": "nodeBot@0.0.1"
+}
