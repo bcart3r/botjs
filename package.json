@@ -1,5 +1,5 @@
 {
-  "name": "nodeBot",
+  "name": "botjs",
   "version": "0.0.1",
   "keywords": [
     "irc",
@@ -15,14 +15,14 @@
       "type": "MIT"
     }
   ],
-  "homepage": "https://github.com/bcart3r/NodeBot",
+  "homepage": "https://github.com/bcart3r/botjs",
   "repositories": [
     {
       "type": "git",
-      "url": "git://github.com/bcart3r/NodeBot.git"
+      "url": "git://github.com/bcart3r/botjs.git"
     }
   ],
   "main": "./lib/bot.js",
   "readme": "# Simple Irc Bots in nodejs.",
-  "_id": "nodeBot@0.0.1"
+  "_id": "botjs@0.0.1"
 }
