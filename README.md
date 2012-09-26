@@ -31,3 +31,5 @@ A plugins callback method should contain two parameters. The first being the ins
     sayHey.callback = function(bot, irc) {
       bot.msg(irc.chan, "well hey there " + irc.user);
     };
+
+    exports.sayHey = sayHey;

@@ -19,7 +19,12 @@ class Bot extends irc.Irc
     @write "PART #{chan}"
 
   on: (match, callback) =>
-    @plugins.push {matcher: match, callback: callback}
+    m = ""
+    switch match
+      when 'join'
+        @plugins.push {matcher: "JOIN", callback: callback}
+      else
+        @plugins.push {matcher: match, callback: callback}
 
   quit: (reason) =>
     @write "QUIT :#{reason}"

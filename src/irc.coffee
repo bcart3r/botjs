@@ -1,5 +1,6 @@
 net = require 'net'
 
+JoinMatcher = /:(.+)!.+ (.+) (#.+)/
 LineMatcher = /:(.+)!.+ (.+) (#.+) :(.+)/
 
 class Irc
@@ -30,12 +31,16 @@ class Irc
       console.log line
 
       if line.search("PING") != -1
-        msg = /:.*/
-        @write "PONG #{line.match(msg)[0]}"
+        @write "PONG #{line.match(':.*')[0]}"
 
       for plugin in @plugins
+        matches = ''
+        switch plugin.matcher
+          when 'JOIN'
+            matches = JoinMatcher.exec(line)
+          else
+            matches = LineMatcher.exec(line)
         if line.match(plugin.matcher)
-          matches = LineMatcher.exec(line)
           ircMap =
             user: matches[1]
             type: matches[2]
